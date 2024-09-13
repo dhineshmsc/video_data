@@ -78,6 +78,8 @@ timestamp = get_timestamp()
 output_excel_path = f'video_details_{timestamp}.xlsx'
 df.to_excel(output_excel_path, index=False)
 
+print(f"video details exported to {output_excel_path}")
+
 # Find duplicates based on 'Duration', 'Resolution', 'File Size', and 'File Type'
 duplicates = df[df.duplicated(subset=['Duration (H:M:S)', 'Resolution', 'File Size (KB)', 'File Type'], keep=False)]
 
