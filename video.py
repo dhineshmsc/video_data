@@ -75,7 +75,7 @@ df = pd.DataFrame(video_data)
 
 # Generate the output file name with current date and time
 timestamp = get_timestamp()
-output_excel_path = f'video_durations_{timestamp}.xlsx'
+output_excel_path = f'video_details_{timestamp}.xlsx'
 df.to_excel(output_excel_path, index=False)
 
 # Find duplicates based on 'Duration', 'Resolution', 'File Size', and 'File Type'
