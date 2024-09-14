@@ -17,6 +17,7 @@ pillow==10.4.0
 proglog==0.1.10
 pyinstaller==6.10.0
 pyinstaller-hooks-contrib==2024.8
+pymediainfo==6.1.0
 python-dateutil==2.9.0.post0
 pytz==2024.2
 pywin32-ctypes==0.2.3
